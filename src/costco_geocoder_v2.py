@@ -101,13 +101,15 @@ class PerformanceTracker:
                 'fuzzy_matches': 0
             }
 
+        sorted_times = sorted(self.lookup_times)
+        n = len(sorted_times)
         return {
-            'total_lookups': len(self.lookup_times),
-            'avg_time_ms': round(sum(self.lookup_times) / len(self.lookup_times), 3),
-            'max_time_ms': round(max(self.lookup_times), 3),
-            'min_time_ms': round(min(self.lookup_times), 3),
-            'p50_time_ms': round(sorted(self.lookup_times)[len(self.lookup_times)//2], 3),
-            'p95_time_ms': round(sorted(self.lookup_times)[int(len(self.lookup_times)*0.95)], 3),
+            'total_lookups': n,
+            'avg_time_ms': round(sum(sorted_times) / n, 3),
+            'max_time_ms': round(max(sorted_times), 3),
+            'min_time_ms': round(min(sorted_times), 3),
+            'p50_time_ms': round(sorted_times[n//2], 3) if n > 0 else 0,
+            'p95_time_ms': round(sorted_times[min(int(n*0.95), n-1)], 3) if n > 0 else 0,
             'cache_hit_rate': round(self.cache_hits / (self.cache_hits + self.cache_misses) * 100, 1) if (self.cache_hits + self.cache_misses) > 0 else 0,
             'cache_hits': self.cache_hits,
             'cache_misses': self.cache_misses,
@@ -118,7 +120,9 @@ class PerformanceTracker:
     def meets_target(self, target_ms: float = 50) -> bool:
         """Check if performance meets target"""
         stats = self.get_stats()
-        return stats['avg_time_ms'] < target_ms and stats['p95_time_ms'] < target_ms * 1.5
+        if stats['total_lookups'] == 0:
+            return True  # No lookups yet, assume good
+        return stats.get('avg_time_ms', 0) < target_ms and stats.get('p95_time_ms', 0) < target_ms * 1.5
 
 
 class CostcoGeocoderV2:
@@ -157,16 +161,23 @@ class CostcoGeocoderV2:
         self._build_indexes()
 
     def _load_database(self):
-        """Load warehouse database from JSON"""
+        """Load warehouse database from JSON (supports both flat and nested formats)"""
         try:
             with open(self.database_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
 
-            for num_str, info in data.items():
+            # Handle nested format (master database)
+            if 'warehouses' in data and isinstance(data['warehouses'], dict):
+                warehouse_data = data['warehouses']
+            else:
+                # Flat format (legacy)
+                warehouse_data = data
+
+            for num_str, info in warehouse_data.items():
                 num = int(num_str)
 
-                # Skip incomplete records
-                if not all(key in info for key in ['name', 'city', 'state', 'lat', 'lon']):
+                # Skip records without essential fields (lat/lon optional)
+                if not all(key in info for key in ['name', 'city', 'state']):
                     continue
 
                 self.warehouses[num] = WarehouseLocation(
@@ -176,8 +187,8 @@ class CostcoGeocoderV2:
                     city=info['city'],
                     state=info['state'],
                     zip=info.get('zip', ''),
-                    lat=info['lat'],
-                    lon=info['lon'],
+                    lat=info.get('lat', 0.0) or 0.0,
+                    lon=info.get('lon', 0.0) or 0.0,
                     phone=info.get('phone')
                 )
 
