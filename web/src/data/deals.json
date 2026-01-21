@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-01-21T23:00:23.809Z",
-  "source": "Apify Costco Scraper",
-  "count": 77,
+  "timestamp": "2026-01-21T23:20:41.266Z",
+  "source": "Apify Costco Scraper (GitHub Actions)",
+  "count": 106,
   "deals": [
     {
       "id": "1937298",
@@ -14,7 +14,7 @@
       "storesCount": 50,
       "states": [],
       "markdownType": [
-        "instant_savings"
+        "online_deal"
       ],
       "url": "https://www.costco.com/go-city---oahu-four-day-highlights-pass.product.4000359689.html",
       "image": "https://bfasset.costco-static.com/U447IH35/as/w3v476xsss79kc6qv9wtc5/4000359689-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
@@ -469,7 +469,7 @@
       "originalPrice": 1.03,
       "salePrice": 1.03,
       "priceCode": "regular",
-      "category": "Health",
+      "category": "Other",
       "storesCount": 1,
       "states": [],
       "markdownType": [
@@ -554,7 +554,7 @@
       "originalPrice": 1.03,
       "salePrice": 1.03,
       "priceCode": "regular",
-      "category": "Health",
+      "category": "Other",
       "storesCount": 1,
       "states": [],
       "markdownType": [
@@ -1251,7 +1251,7 @@
       "originalPrice": 1.03,
       "salePrice": 1.03,
       "priceCode": "regular",
-      "category": "Health",
+      "category": "Other",
       "storesCount": 8,
       "states": [],
       "markdownType": [
@@ -1311,8 +1311,499 @@
       "url": "https://www.costco.com/ryerson-6-piece-power-reclining-leather-sectional-with-power-headrests.product.100805549.html",
       "image": "https://bfasset.costco-static.com/U447IH35/as/5jnr8597r8ntvkr5c5pt6tjh/1549481-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
       "rating": 4.58
+    },
+    {
+      "id": "1990855",
+      "name": "Chateau Petrus Vertical Set, 11 Pack 750ml CA ONLY (PRE-SALE)",
+      "brand": "Chateau Petrus",
+      "originalPrice": 84999.99,
+      "salePrice": 84999.99,
+      "priceCode": "regular",
+      "category": "Pet",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/chateau-petrus-vertical-set-11-pack-750ml-ca-only-pre-sale.product.4000405250.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/9k2pf758k5gwb4x65bvfv89r/1990855-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1754776",
+      "name": "Duclot Collection 2019 Bordeaux Set, 9-pack 750 ml CA ONLY (PRE-SALE)",
+      "brand": "Duclot",
+      "originalPrice": 13999.99,
+      "salePrice": 13999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/duclot-collection-2019-bordeaux-set-9-pack-750-ml-ca-only-pre-sale.product.4000197070.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/636f24mhk83nvhn7rpcrn96f/1754776-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1521424",
+      "name": "Pre-order Longfield Gardens Bareroot Fruit Collections",
+      "brand": "Longfield Gardens",
+      "originalPrice": 74.99,
+      "salePrice": 74.99,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 62,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/pre-order-longfield-gardens-bareroot-fruit-collections.product.4000152189.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/vtc6h9f7pt9rwfkbtxtfc3f/1521424-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.87
+    },
+    {
+      "id": "1542916",
+      "name": "Samsung 6.0 cu. ft. Smart Freestanding GAS Range with No-Preheat Air Fry and Convection",
+      "brand": "Samsung",
+      "originalPrice": 899.99,
+      "salePrice": 899.99,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 668,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/samsung-60-cu-ft-smart-freestanding-gas-range-with-no-preheat-air-fry-and-convection.product.100758393.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/xwgh5zjjfxmqcz3fkxhgw8w/100758393-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.33
+    },
+    {
+      "id": "1941089",
+      "name": "Whisper W3 4-seat Off-road Recreational Golf Cart",
+      "brand": "Whisper",
+      "originalPrice": 7199.99,
+      "salePrice": 7199.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 19,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/whisper-w3-4-seat-off-road-recreational-golf-cart.product.4000362071.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/tvxwcz67xqnw5p399fx5nnc/4000362071-847_black_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.37
+    },
+    {
+      "id": "1941082",
+      "name": "Whisper W5XL 6-seat Off-road Recreational Golf Cart",
+      "brand": "Whisper",
+      "originalPrice": 10299.99,
+      "salePrice": 10299.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 13,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/whisper-w5xl-6-seat-off-road-recreational-golf-cart.product.4000362069.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/gnp5bcb4x9hpktb9nzk8knss/4000362069-847_black_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.46
+    },
+    {
+      "id": "1166543",
+      "name": "Aquaterra Spas Brighton 26-jet, 5 or 6-person Rotomolded Spa, Plug-n-Play",
+      "brand": "Aquaterra",
+      "originalPrice": 3999.99,
+      "salePrice": 3999.99,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 514,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/aquaterra-spas-brighton-26-jet-5-or-6-person-rotomolded-spa-plug-n-play.product.100367530.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/prj68rqz6v9xn9jv86wm5zp6/100367530-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.43
+    },
+    {
+      "id": "1753433",
+      "name": "Callaway Edge Graphite 10-piece Golf Club Set, Right Handed",
+      "brand": "Callaway",
+      "originalPrice": 649.99,
+      "salePrice": 649.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1289,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/callaway-edge-graphite-10-piece-golf-club-set-right-handed.product.4000230477.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/rcjkqmtszvqt55v4mrt7/1753433-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.68
+    },
+    {
+      "id": "1754775",
+      "name": "Dom Perignon Champagne Collector's Edition Vertical Set 1976 to 2012, 24 Pack 750 ml CA ONLY (PRE-SALE)",
+      "brand": "Dom Pérignon",
+      "originalPrice": 17499.99,
+      "salePrice": 17499.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/dom-perignon-champagne-collectors-edition-vertical-set-1976-to-2012-24-pack-750-ml-ca-only-pre-sale.product.4000197069.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/rjngvtw37nm6m4296qpz2j/1754775-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1890044",
+      "name": "Alder & Oak Azalea Shrub",
+      "brand": "Alder & Oak",
+      "originalPrice": 59.99,
+      "salePrice": 59.99,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 12,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/alder-and-oak-azalea-shrub.product.4000326376.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/jxw7wx37nzcppmw6h6pp556n/4000326376-847_alaskawhite_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.75
+    },
+    {
+      "id": "1975760",
+      "name": "Evolution by Strong Spas Centurion 108-jet, 6-person Double Lounger Acrylic Spa",
+      "brand": "Evolution by Strong Spas",
+      "originalPrice": 9999.99,
+      "salePrice": 9999.99,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 4,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/evolution-by-strong-spas-centurion-108-jet-6-person-double-lounger-acrylic-spa.product.4000397166.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/t6m4zkbnsb3tj45n9j9pw9/4000397166-847_brown_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 1.75
+    },
+    {
+      "id": "1643939",
+      "name": "Maytag 16 cu. ft. Chest Freezer with Heavy Duty Sliding Baskets in White",
+      "brand": "Maytag",
+      "originalPrice": 599.99,
+      "salePrice": 599.99,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 228,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/maytag-16-cu-ft-chest-freezer-with-heavy-duty-sliding-baskets-in-white.product.100850649.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/nr9w5h7qhjrwc7sx6spcvg/1643939-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.65
+    },
+    {
+      "id": "1990858",
+      "name": "Duclot Bordeaux Collection Gift Set, 7 Pack 750ml CA ONLY (PRE-SALE)",
+      "brand": "Duclot",
+      "originalPrice": 7999.99,
+      "salePrice": 7999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/duclot-bordeaux-collection-gift-set-7-pack-750ml-ca-only-pre-sale.product.4000405259.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/hjf5vms4hmpj4cn3kz5sfsm3/1990858-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1990859",
+      "name": "Duclot Bordeaux Collection Gift Set, 9 Pack 750ml CA ONLY (PRE-SALE)",
+      "brand": "Duclot",
+      "originalPrice": 11999.99,
+      "salePrice": 11999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/duclot-bordeaux-collection-gift-set-9-pack-750ml-ca-only-pre-sale.product.4000405237.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/fjx434vjpwwntq8j8k3v8v/1990859-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1944725",
+      "name": "Cheval Blanc 36 Bottle Vertical Set, 1970-2006, 750 ml CA ONLY (PRE-SALE)",
+      "brand": "",
+      "originalPrice": 34999.99,
+      "salePrice": 34999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/cheval-blanc-36-bottle-vertical-set-1970-2006-750-ml-ca-only-pre-sale.product.4000366140.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/qqhqk65jg839hk5vbtmj5bth/1944725-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1944736",
+      "name": "Cos d'Estournel 18 Bottle Vertical Set, 2000-2017, 750 ml CA ONLY (PRE-SALE)",
+      "brand": "",
+      "originalPrice": 5799.99,
+      "salePrice": 5799.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/cos-destournel-18-bottle-vertical-set-2000-2017-750-ml-ca-only-pre-sale.product.4000366179.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/nf7mjsmqv9mnb3f8vjw68/1944736-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1990853",
+      "name": "Chateau Haut Brion Historical Magnum Gift Set, 24 Pack 1500ml CA ONLY (PRE-SALE)",
+      "brand": "Chateau Haut Brion",
+      "originalPrice": 49999.99,
+      "salePrice": 49999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/chateau-haut-brion-historical-magnum-gift-set-24-pack-1500ml-ca-only-pre-sale.product.4000405302.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/xp2t3n435f7hqnrmxks2nk5/1990853-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1917818",
+      "name": "Domaine De La Romanee-Conti 2018 Assorted 5 Pack, 750 ml CA ONLY (PRE-SALE)",
+      "brand": "Domaine de La Romanee-Conti",
+      "originalPrice": 29999.99,
+      "salePrice": 29999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/domaine-de-la-romanee-conti-2018-assorted-5-pack-750-ml-ca-only-pre-sale.product.4000343237.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/5jqxw6gghgxkvf49k7cmknx/1917818-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1754786",
+      "name": "Leoville Las Cases \"Collection Miroir\" Vertical Set 1982, 1990, 1996, 2000, 2005, 2009, 6 Pack, 750ml CA ONLY (PRE-SALE)",
+      "brand": "Chateau Leoville Las Cases",
+      "originalPrice": 3899.99,
+      "salePrice": 3899.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/leoville-las-cases-collection-miroir-vertical-set-1982-1990-1996-2000-2005-2009-6-pack-750ml-ca-only-pre-sale.product.4000197097.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/n3bsjz2zw8n8xxtbpbsv7s/1754786-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1944743",
+      "name": "Château Lafite Rothschild 6 Bottle Decade Collection, 90/00/10, 750 ml CA ONLY (PRE-SALE)",
+      "brand": "",
+      "originalPrice": 9999.99,
+      "salePrice": 9999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/chteau-lafite-rothschild-6-bottle-decade-collection-900010-750-ml-ca-only-pre-sale.product.4000366100.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/qmwhvqjx4mnrbz8svvn277q/1944743-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417992",
+      "name": "Payment Processing",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 2,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/payment-processing.product.100417991.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/3xr7qzjnhm576z5rs3x97j8k/100417992-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 5
+    },
+    {
+      "id": "1944758",
+      "name": "Ultimate Great Wines of the World 6 Bottle Set, 90/97/00/13/17/18, 750 ml CA ONLY (PRE-SALE)",
+      "brand": "",
+      "originalPrice": 6999.99,
+      "salePrice": 6999.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ultimate-great-wines-of-the-world-6-bottle-set-909700131718-750-ml-ca-only-pre-sale.product.4000366182.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/t99549hzpc3pnn4k2ct4wjqn/1944758-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "2010730",
+      "name": "MLB Cincinnati Reds - Two Champion Club Tickets, eVoucher",
+      "brand": "",
+      "originalPrice": 149.99,
+      "salePrice": 149.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/mlb-cincinnati-reds---two-champion-club-tickets-evoucher.product.4000420279.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/fvk85fjg3xkmr6pphsttf76/4000420279-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 5
+    },
+    {
+      "id": "1754802",
+      "name": "Chateau Calon Segur Gift Set 1998, 2003, 2005, 2006, 2009, 2010, 6 Pack 750 ml CA ONLY (PRE-SALE)",
+      "brand": "Calon Segur",
+      "originalPrice": 1199.99,
+      "salePrice": 1199.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/chateau-calon-segur-gift-set-1998-2003-2005-2006-2009-2010-6-pack-750-ml-ca-only-pre-sale.product.4000197121.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/r4nsp72jfrswnn6wb7f9jr/1754802-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "2010717",
+      "name": "MLB Baltimore Orioles - Two Field Level Box Tickets, eVoucher",
+      "brand": "",
+      "originalPrice": 89.99,
+      "salePrice": 89.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/mlb-baltimore-orioles---two-field-level-box-tickets-evoucher.product.4000420179.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/gfhxz3fk4b3bcs7h3h5n5j/4000420179-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "2010785",
+      "name": "MLB Washington Nationals - Two Infield Tickets + $30 Food & Beverage Credit, eVoucher",
+      "brand": "",
+      "originalPrice": 129.99,
+      "salePrice": 129.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/mlb-washington-nationals---two-infield-tickets-30-food-and-beverage-credit-evoucher.product.4000420203.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/9v6rggbbp4kcfkwr87687jb/4000420203-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "1756601",
+      "name": "Evolution by Strong Spas Enhance 40-jet, 6 or 7-person Acrylic Spa",
+      "brand": "Evolution by Strong Spas",
+      "originalPrice": 5799.99,
+      "salePrice": 5799.99,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 92,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/evolution-by-strong-spas-enhance-40-jet-6-or-7-person-acrylic-spa.product.4000197617.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/3frz98t6mp98kz3vvf3k2g2c/4000197617-847_gray_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.29
+    },
+    {
+      "id": "1845950",
+      "name": "Stix 10-piece Golf Club Set",
+      "brand": "Stix Golf",
+      "originalPrice": 549.99,
+      "salePrice": 549.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 138,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/stix-10-piece-golf-club-set.product.4000282550.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/wpjssjshp7kh5sx7p8grbj3s/4000282550-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.65
+    },
+    {
+      "id": "77053",
+      "name": "Grape Tomatoes, 2 lbs",
+      "brand": "",
+      "originalPrice": 4.49,
+      "salePrice": 4.49,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/grape-tomatoes-2-lbs.product.100608970.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/fsgtngqt5g6x7zvw64sk4v3/77053-inc__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     }
-  ],
-  "lastAttempt": "2026-01-21T23:15:46.851Z",
-  "lastAttemptCount": 0
+  ]
 }
