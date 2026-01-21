@@ -22,6 +22,12 @@ jobs:
           repository: DeadManOfficial/DeadManUltimateScraper
           path: scraper
 
+      - name: Checkout token-optimization
+        uses: actions/checkout@v4
+        with:
+          repository: DeadManOfficial/token-optimization
+          path: token-optimization
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -36,13 +42,18 @@ jobs:
           curl --socks5-hostname 127.0.0.1:9050 https://check.torproject.org/api/ip || echo "TOR check failed"
 
       - name: Install dependencies
-        working-directory: ./scraper
         run: |
-          pip install -e . --no-deps || true
-          pip install curl_cffi httpx beautifulsoup4 pydantic pyyaml stem tldextract fake-useragent requests
+          # Install token-optimization
+          cd token-optimization && pip install -r requirements.txt || true && cd ..
+
+          # Install DeadMan scraper deps
+          cd scraper && pip install -e . --no-deps || true && cd ..
+          pip install curl_cffi httpx beautifulsoup4 pydantic pyyaml stem tldextract fake-useragent requests aiohttp lxml
 
       - name: Run DeadMan Costco Scraper
         working-directory: ./scraper
+        env:
+          PYTHONPATH: "${{ github.workspace }}/token-optimization:${{ github.workspace }}/scraper"
         run: |
           python -c "
           import asyncio
