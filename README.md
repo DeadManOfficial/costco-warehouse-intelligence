@@ -10,11 +10,11 @@
 
 <br>
 
+<a href="https://costco-warehouse-intelligence.vercel.app">
+  <img src="https://img.shields.io/badge/Live_App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live App" />
+</a>
 <a href="https://github.com/DeadManOfficial/costco-warehouse-intelligence">
   <img src="https://img.shields.io/badge/GitHub-Source-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-<a href="https://www.python.org">
-  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 </a>
 <a href="https://github.com/DeadManOfficial/costco-warehouse-intelligence">
   <img src="https://img.shields.io/badge/Warehouses-643-DC143C?style=for-the-badge" alt="Warehouses" />
@@ -26,11 +26,12 @@
 
 ---
 
-## Two Tools, One Repo
+## Three Tools, One Repo
 
 | Tool | Description |
 |------|-------------|
-| **Database + Geocoder** | 643 warehouses, GPS coords, instant lookups |
+| **[Live Web App](https://costco-warehouse-intelligence.vercel.app)** | Search all 643 warehouses online |
+| **Database + Geocoder** | Python API for GPS coords, instant lookups |
 | **Markdown Hunter App** | Desktop app to find hidden deals |
 
 ---
@@ -107,6 +108,7 @@ Commercial Costco APIs cost $80+/month. This is free forever.
 
 ```
 costco-warehouse-intelligence/
+├── web/                    # Next.js web app (Vercel)
 ├── src/                    # Geocoder library
 ├── data/                   # Warehouse database
 ├── app/                    # Markdown Hunter desktop app
