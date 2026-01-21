@@ -1,563 +1,1316 @@
 {
-  "timestamp": "2026-01-21T22:03:40.826Z",
-  "source": "Warehouse Runner",
-  "count": 37,
+  "timestamp": "2026-01-21T23:00:23.809Z",
+  "source": "Apify Costco Scraper",
+  "count": 77,
   "deals": [
     {
-      "id": "28028",
-      "name": "28\" Mixed Greens Wreath",
-      "brand": "28\"",
-      "originalPrice": 19.99,
-      "salePrice": 4.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 72,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/28028"
-    },
-    {
-      "id": "1320970",
-      "name": "Sukhi's Organic Lemon Rice 2/24 oz",
-      "brand": "Sukhi's",
-      "originalPrice": 14.99,
-      "salePrice": 3.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 2,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1320970"
-    },
-    {
-      "id": "112266",
-      "name": "Madi Gran Panettone 2.2 lbs",
-      "brand": "Madi",
-      "originalPrice": 10.99,
-      "salePrice": 2.97,
-      "priceCode": ".97",
-      "category": "Kitchen",
-      "storesCount": 65,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/112266"
-    },
-    {
-      "id": "88566",
-      "name": "Ore-Ida Tater Tots 8 Pound Bag",
-      "brand": "Ore-Ida",
-      "originalPrice": 11.59,
-      "salePrice": 4.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 16,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/88566"
-    },
-    {
-      "id": "1554558",
-      "name": "Chobani Plain Greek Yogurt 2.5 lbs",
-      "brand": "Chobani",
-      "originalPrice": 5.99,
-      "salePrice": 2.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 4,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1554558"
-    },
-    {
-      "id": "2598",
-      "name": "Reflections Silver Plastic Cutlery 160 Count",
-      "brand": "Reflections",
-      "originalPrice": 9.99,
-      "salePrice": 4.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 14,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/2598"
-    },
-    {
-      "id": "112218",
-      "name": "Häagen-Dazs Vanilla & Almond Bars 15/3 fl oz (1.40 Qts)",
-      "brand": "Häagen-Dazs",
-      "originalPrice": 13.99,
-      "salePrice": 6.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 3,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/112218"
-    },
-    {
-      "id": "1322682",
-      "name": "Gerry Youth Snow Pant",
-      "brand": "Gerry",
-      "originalPrice": 9.97,
-      "salePrice": 4.97,
-      "priceCode": ".97",
-      "category": "Kitchen",
-      "storesCount": 113,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1322682"
-    },
-    {
-      "id": "1557516",
-      "name": "Banana Republic Men's Performance Pant",
-      "brand": "Banana Republic",
-      "originalPrice": 4.97,
-      "salePrice": 2.5,
-      "priceCode": "regular",
-      "category": "Kitchen",
-      "storesCount": 179,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1557516"
-    },
-    {
-      "id": "1363786",
-      "name": "Dittmann Stuffed Peperoncini Duo 20.46 Ounce Jar",
-      "brand": "Dittmann",
-      "originalPrice": 9.49,
-      "salePrice": 4.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 1,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1363786"
-    },
-    {
-      "id": "866923",
-      "name": "MARLBORO RED 72 BOX",
-      "brand": "MARLBORO",
-      "originalPrice": 156.35,
-      "salePrice": 82.69,
+      "id": "1937298",
+      "name": "Go City - Oahu Four Day Highlights Pass",
+      "brand": "Go City",
+      "originalPrice": 264.99,
+      "salePrice": 219.99,
       "priceCode": "regular",
       "category": "Other",
-      "storesCount": 0,
+      "storesCount": 50,
       "states": [],
       "markdownType": [
-        "manager_special"
+        "instant_savings"
       ],
-      "url": "https://app.warehouserunner.com/costco/866923"
+      "url": "https://www.costco.com/go-city---oahu-four-day-highlights-pass.product.4000359689.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/w3v476xsss79kc6qv9wtc5/4000359689-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.52
     },
     {
-      "id": "711585",
-      "name": "Samuel Adams Octoberfest 28/12 Ounce Bottles",
-      "brand": "Samuel Adams",
-      "originalPrice": 37.39,
-      "salePrice": 19.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 2,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/711585"
-    },
-    {
-      "id": "1339884",
-      "name": "Stonyfield Organic Smoothies with Probiotics 12/6 fl oz (2.25 QTS)",
-      "brand": "Stonyfield Organic",
-      "originalPrice": 10.99,
-      "salePrice": 5.97,
-      "priceCode": ".97",
-      "category": "Health",
-      "storesCount": 11,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1339884"
-    },
-    {
-      "id": "54846",
-      "name": "La Crema Pinot Noir Sonoma Coast 750 ML",
-      "brand": "La Crema",
-      "originalPrice": 21.99,
-      "salePrice": 11.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 4,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/54846"
-    },
-    {
-      "id": "914351",
-      "name": "Starbucks Iced Coffee 2/48 Ounce Bottles",
-      "brand": "Starbucks",
-      "originalPrice": 9.99,
-      "salePrice": 5.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 6,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/914351"
-    },
-    {
-      "id": "1259871",
-      "name": "Delici Belgian Chocolate Mousse 6 Pack, 2.67 oz Cups",
-      "brand": "Delici",
-      "originalPrice": 12.49,
-      "salePrice": 7.97,
-      "priceCode": ".97",
-      "category": "Other",
+      "id": "1955452",
+      "name": "LG 25 cu. ft. Counter-depth MAX with Zero Clearance 3-door French Door Refrigerator with Thin Door Design",
+      "brand": "LG",
+      "originalPrice": 1749.99,
+      "salePrice": 1749.99,
+      "priceCode": "regular",
+      "category": "Home",
       "storesCount": 8,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1259871"
+      "url": "https://www.costco.com/lg-25-cu-ft-counter-depth-max-with-zero-clearance-3-door-french-door-refrigerator-with-thin-door-design.product.4000397937.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/hv4c3brwjjhmhcvrx498sfr/4000397937-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.5
     },
     {
-      "id": "1312509",
-      "name": "MUSH Overnight Oats Variety Pack, 8 Cups, 5 oz Each (2.5 lbs Total)",
-      "brand": "MUSH",
-      "originalPrice": 9.99,
-      "salePrice": 6.49,
+      "id": "1715567",
+      "name": "LG Counter-Depth MAX with Zero Clearance 3-Door French Door Refrigerator",
+      "brand": "LG",
+      "originalPrice": 1999.99,
+      "salePrice": 1999.99,
       "priceCode": "regular",
-      "category": "Other",
-      "storesCount": 8,
+      "category": "Home",
+      "storesCount": 23,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1312509"
+      "url": "https://www.costco.com/lg-counter-depth-max-with-zero-clearance-3-door-french-door-refrigerator.product.4000103938.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/f6rq6nk49b4n3t3s639n4rts/4000103938-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.91
     },
     {
-      "id": "1891",
-      "name": "CHINET EXTRA LARGE PLATTER 100 CT",
-      "brand": "CHINET",
-      "originalPrice": 18.99,
-      "salePrice": 14.99,
+      "id": "V200060",
+      "name": "LG 4-piece Induction Kitchen Package with Counter-Depth MAX with Zero Clearance 3-door French Door Refrigerator",
+      "brand": "LG",
+      "originalPrice": 5299.96,
+      "salePrice": 5299.96,
       "priceCode": "regular",
-      "category": "Other",
-      "storesCount": 1,
+      "category": "Home",
+      "storesCount": 1630,
       "states": [],
       "markdownType": [
-        "instant_savings",
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1891"
+      "url": "https://www.costco.com/lg-4-piece-induction-kitchen-package-with-counter-depth-max-with-zero-clearance-3-door-french-door-refrigerator.product.4000422634.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/85ggvtvmfggw3b7hc4mvkz/4000422634-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.29
     },
     {
-      "id": "1338936",
-      "name": "Upper Crust Bakery Mini Lemon Bites 30 Ounce Container",
-      "brand": "Upper Crust Bakery",
-      "originalPrice": 8.59,
-      "salePrice": 7.49,
+      "id": "V200061",
+      "name": "LG 4-piece Induction Kitchen Package with 25 cu. ft. Counter-depth MAX with Zero Clearance 3-door French Door Refrigerator with Thin Door Design",
+      "brand": "LG",
+      "originalPrice": 4749.96,
+      "salePrice": 4749.96,
       "priceCode": "regular",
-      "category": "Other",
-      "storesCount": 2,
+      "category": "Home",
+      "storesCount": 1607,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1338936"
+      "url": "https://www.costco.com/lg-4-piece-induction-kitchen-package-with-25-cu-ft-counter-depth-max-with-zero-clearance-3-door-french-door-refrigerator-with-thin-door-design.product.4000422531.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/tcg8bn4gpsctvzfkjtrspb38/4000422531-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.3
     },
     {
-      "id": "1308641",
-      "name": "STERNO CHROME WIRE CHAFING STAND 3 PACK",
-      "brand": "STERNO",
-      "originalPrice": 12.49,
-      "salePrice": 10.99,
+      "id": "1744590",
+      "name": "One Year GolfPass+ Membership",
+      "brand": "GolfPass",
+      "originalPrice": 79.99,
+      "salePrice": 79.99,
       "priceCode": "regular",
       "category": "Other",
-      "storesCount": 1,
+      "storesCount": 137,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1308641"
+      "url": "https://www.costco.com/one-year-golfpass-membership.product.4000182458.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/6j4wcqqxqpsq58gqg8f3mgbv/1744590-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.98
     },
     {
-      "id": "27398",
-      "name": "Grey Poupon Dijon Mustard 2 Pack 16 Ounces Each",
-      "brand": "Grey Poupon",
-      "originalPrice": 8.49,
-      "salePrice": 7.99,
+      "id": "V100597",
+      "name": "GE 4-Piece ELECTRIC Kitchen Package with 21.9 cu. ft. Counter-Depth French Door Refrigerator",
+      "brand": "GE Appliances",
+      "originalPrice": 3509.96,
+      "salePrice": 3509.96,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 2041,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ge-4-piece-electric-kitchen-package-with-219-cu-ft-counter-depth-french-door-refrigerator.product.4000362406.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/bg2jcrb38qknw9k38m88kvt/4000362406-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.03
+    },
+    {
+      "id": "1667916",
+      "name": "LG 4.5 cu. ft. Front Load Washer with TurboWash 360 and Built-In Intelligence",
+      "brand": "LG",
+      "originalPrice": 849.99,
+      "salePrice": 849.99,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 710,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/lg-45-cu-ft-front-load-washer-with-turbowash-360-and-built-in-intelligence.product.4000110151.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/7kbh98wtg7x8xf84x2qcq/4000110151-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.43
+    },
+    {
+      "id": "326965",
+      "name": "The Honey Baked Ham Co. Two $50 Mailed Gift Cards ($100 Value)",
+      "brand": "The Honey Baked Ham Co.",
+      "originalPrice": 79.99,
+      "salePrice": 79.99,
       "priceCode": "regular",
       "category": "Other",
-      "storesCount": 1,
+      "storesCount": 1177,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/27398"
+      "url": "https://www.costco.com/the-honey-baked-ham-co-two-50-mailed-gift-cards-100-value.product.100616771.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/jf84skczt6rs6kfg69877m6z/326965-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.62
     },
     {
-      "id": "1966914",
-      "name": "Dawn Foods White Cake Base 25 lb Bag",
-      "brand": "Dawn Foods",
-      "originalPrice": 9.97,
-      "salePrice": 9.97,
+      "id": "1712043",
+      "name": "Domino's Four Restaurant $25 eGift Cards ($100 Value)",
+      "brand": "Domino's",
+      "originalPrice": 79.99,
+      "salePrice": 79.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 4575,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/dominos-four-restaurant-25-egift-cards-100-value.product.4000100405.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/x5nn79fcqb9b48nhnsnm9n/1712043-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.15
+    },
+    {
+      "id": "V100594",
+      "name": "GE 4-Piece ELECTRIC Kitchen Package with 22.1 cu. ft. Counter-Depth French Door Refrigerator",
+      "brand": "GE Appliances",
+      "originalPrice": 3929.96,
+      "salePrice": 3929.96,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 3084,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ge-4-piece-electric-kitchen-package-with-221-cu-ft-counter-depth-french-door-refrigerator.product.4000362333.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/jpmzt44wxbpq9jxm5jt5r9pb/4000362333-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.1
+    },
+    {
+      "id": "615348",
+      "name": "Whirlpool 19.2 cu. ft. Top Freezer Refrigerator with LED Interior Lighting",
+      "brand": "Whirlpool",
+      "originalPrice": 499.97,
+      "salePrice": 499.97,
       "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 13,
+      "category": "Home",
+      "storesCount": 1360,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1966914"
+      "url": "https://www.costco.com/whirlpool-192-cu-ft-top-freezer-refrigerator-with-led-interior-lighting.product.100214339.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/7r8zfsq456kt9c79x9kfkm5/615348-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.96
     },
     {
-      "id": "1555",
-      "name": "PHILIPPINE DRIED MANGOES 30 OUNCES",
-      "brand": "PHILIPPINE",
-      "originalPrice": 12.89,
-      "salePrice": 12.89,
+      "id": "V100611",
+      "name": "LG 5.0 cu. ft. Top Load Washer and 7.3 cu. ft. Rear Control GAS Dryer with Easy Unload Bundle",
+      "brand": "LG",
+      "originalPrice": 1699.98,
+      "salePrice": 1699.98,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 60,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/lg-50-cu-ft-top-load-washer-and-73-cu-ft-rear-control-gas-dryer-with-easy-unload-bundle.product.4000365907.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/8jsnrggbsfc74shws7wsjcp7/4000365907-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.97
+    },
+    {
+      "id": "100351549",
+      "name": "Capture Home Movie & Photo Transfer - Costco Next",
+      "brand": "",
+      "originalPrice": 1.04,
+      "salePrice": 1.04,
       "priceCode": "regular",
       "category": "Other",
-      "storesCount": 15,
+      "storesCount": 5,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1555"
+      "url": "https://www.costco.com/capture-home-movie-and-photo-transfer---costco-next.product.100351548.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/tj6vfn4g4g44hkskxzn3pn/100351548-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 5
     },
     {
-      "id": "1504992",
-      "name": "Foster Grant Design Optics 3 Pack Reading Glasses",
-      "brand": "Foster Grant",
-      "originalPrice": 9.97,
-      "salePrice": 9.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 27,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1504992"
-    },
-    {
-      "id": "1591226",
-      "name": "GALILEAN'S KITCHEN BACON WRAPPED SCALLOPS 13 OZ",
-      "brand": "GALILEAN'S",
-      "originalPrice": 9.97,
-      "salePrice": 9.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 28,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1591226"
-    },
-    {
-      "id": "1622",
-      "name": "JAPANESE MAPLE UPRIGHT ASSORTED VARIETIES 6.04G",
-      "brand": "JAPANESE",
-      "originalPrice": 26.97,
-      "salePrice": 26.97,
-      "priceCode": ".97",
+      "id": "100351422",
+      "name": "Caraway - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
       "category": "Kitchen",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1622"
+      "url": "https://www.costco.com/caraway---costco-next.product.100351421.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/334mqpcrnw9476gmkkgzj/100351422-847_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1581548",
-      "name": "14KT YELLOW GOLD VS2 I 2.35CTW ROUND DIAMOND 18\" INCH NECKLACE",
-      "brand": "14KT",
-      "originalPrice": 2499.97,
-      "salePrice": 2499.97,
-      "priceCode": ".97",
-      "category": "Other",
+      "id": "100538339",
+      "name": "Caraway 20-piece Ultimate Ceramic Set - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Kitchen",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1581548"
+      "url": "https://www.costco.com/caraway-20-piece-ultimate-ceramic-set---costco-next.product.100538338.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/bfjq4w7q48jwmt7778gppjp/100538338-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1334201",
-      "name": "5-PACK DRAKE RESIN PLANTERS",
-      "brand": "5-PACK",
-      "originalPrice": 14.97,
-      "salePrice": 14.97,
-      "priceCode": ".97",
-      "category": "Other",
+      "id": "100417688",
+      "name": "CLX - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Electronics",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1334201"
+      "url": "https://www.costco.com/clx---costco-next.product.100417687.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/px6c4r4bhm9nw9qrc4p5fprk/100417687-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1574930",
-      "name": "14kt White Gold VS2 I 0.05ctw Diamond and Swiss Blue Topaz Ring",
-      "brand": "14kt",
-      "originalPrice": 399.97,
-      "salePrice": 399.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 4,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1574930"
-    },
-    {
-      "id": "1265",
-      "name": "HYDRANGEA 2.7G/10.3L",
-      "brand": "HYDRANGEA",
-      "originalPrice": 29.99,
-      "salePrice": 29.99,
+      "id": "100017124",
+      "name": "Priority Bicycles CURRENT Plus E-BIKE - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
       "priceCode": "regular",
       "category": "Other",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1265"
+      "url": "https://www.costco.com/priority-bicycles-current-plus-e-bike---costco-next.product.100017123.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/3wmk7vr3rpxfn267kb2qs6/100017123-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1586087",
-      "name": "MONDETTA LADIES LIGHTWEIGHT PRINTED TOP",
-      "brand": "MONDETTA",
-      "originalPrice": 2.97,
-      "salePrice": 2.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 6,
+      "id": "100016051",
+      "name": "Nomatic Travel Bag 40L - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1586087"
+      "url": "https://www.costco.com/nomatic-travel-bag-40l---costco-next.product.100016050.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/4xcq24xf2x499vv8swjkmt8s/100016050-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1299220",
-      "name": "PURELUX SIMPLY COOL MEMORY FOAM PILLOW - QUEEN",
-      "brand": "PURELUX",
-      "originalPrice": 19.97,
-      "salePrice": 19.97,
-      "priceCode": ".97",
+      "id": "100017116",
+      "name": "Gorilla Playsets Everest Elite Swing Set - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/gorilla-playsets-everest-elite-swing-set---costco-next.product.100017115.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/nnpqcn2bqz7q64rznzn7k34b/100017115-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662540",
+      "name": "EcoFlow DELTA 2 Max with Extra Battery + 800W Alternator Charger - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ecoflow-delta-2-max-with-extra-battery-800w-alternator-charger---costco-next.product.100662539.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/4f84f65krkn7n44hx4fkh/100662539-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100725562",
+      "name": "Giant Art - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/giant-art---costco-next.product.100725561.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/j4rv34j6j9r93w7s5t55brj8/100725561-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100725564",
+      "name": "Studio Shed - Costco Next",
+      "brand": "",
+      "originalPrice": 1,
+      "salePrice": 1,
+      "priceCode": ".00",
+      "category": "Outdoor",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/studio-shed---costco-next.product.100725563.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/krmb4j4tr7mhx4ks7xtp6kr6/100725563-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351428",
+      "name": "Tolani - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/tolani---costco-next.product.100351427.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/hpprcv234twhz6jnrrpbscn/100351427-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351434",
+      "name": "Soft Cloth - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/soft-cloth---costco-next.product.100351433.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/ph9pmc6qbxpxm35ct85gb4fs/100351433-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351446",
+      "name": "Eureka Ergonomic - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
       "category": "Home",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1299220"
+      "url": "https://www.costco.com/eureka-ergonomic---costco-next.product.100351445.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/pf9jkb9m5hfgm4mg5sqppb4z/100351445-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1624332",
-      "name": "Samurai Tactical Fish Kojiro Tackle Backpack",
-      "brand": "Samurai Tactical",
-      "originalPrice": 29.97,
-      "salePrice": 29.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 2,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1624332"
-    },
-    {
-      "id": "1336",
-      "name": "TROPICAL FOLIAGE IN CERAMIC 36OZ/265ML",
-      "brand": "TROPICAL",
-      "originalPrice": 11.97,
-      "salePrice": 11.97,
-      "priceCode": ".97",
-      "category": "Other",
+      "id": "100351442",
+      "name": "Bull Outdoor - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Outdoor",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1336"
+      "url": "https://www.costco.com/bull-outdoor---costco-next.product.100351441.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/qxssnbphjvkbvt8tpptp73j3/100351441-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1624844",
-      "name": "HURLEY WOMEN'S PUFF CLOG",
-      "brand": "HURLEY",
-      "originalPrice": 4.97,
-      "salePrice": 4.97,
-      "priceCode": ".97",
-      "category": "Other",
-      "storesCount": 6,
-      "states": [],
-      "markdownType": [
-        "regional_discount"
-      ],
-      "url": "https://app.warehouserunner.com/costco/1624844"
-    },
-    {
-      "id": "1328036",
-      "name": "32 DEGREES + MEN'S BOXER BRIEF 3 PK",
-      "brand": "32",
-      "originalPrice": 6.97,
-      "salePrice": 6.97,
-      "priceCode": ".97",
-      "category": "Other",
+      "id": "100351460",
+      "name": "By Sophie - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Health",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1328036"
+      "url": "https://www.costco.com/by-sophie---costco-next.product.100351459.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/cfkwkc8bf853hm4c2jxf69j/100351459-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
     },
     {
-      "id": "1412811",
-      "name": "KOSHER FOR PASSOVER RAINBOW COOKIES 18 OZ (1.12 LBS)",
-      "brand": "KOSHER",
-      "originalPrice": 8.79,
-      "salePrice": 8.79,
+      "id": "100538299",
+      "name": "Dr. Althea - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
       "priceCode": "regular",
       "category": "Other",
       "storesCount": 1,
       "states": [],
       "markdownType": [
-        "regional_discount"
+        "online_deal"
       ],
-      "url": "https://app.warehouserunner.com/costco/1412811"
+      "url": "https://www.costco.com/dr-althea---costco-next.product.100538298.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/fzncnsq4mpm4xqx8ps7rgwk/100538298-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351448",
+      "name": "Samsonite - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/samsonite---costco-next.product.100351447.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/j9kb6fsvh6f7w636h7nq3tz/100351448-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351579",
+      "name": "Travelpro - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/travelpro---costco-next.product.100351578.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/4k9qn9smcwc7zjvc4x6c56/100351578-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351593",
+      "name": "Gorilla Playsets - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/gorilla-playsets---costco-next.product.100782625.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/g75kg42kk9cpbrsfwxvq6fz/100782625-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351595",
+      "name": "Kaged Muscle Supplements - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Health",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/kaged-muscle-supplements---costco-next.product.100351594.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/fgbffrxsqf6gv55fm9g2f8m/100351594-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100142466",
+      "name": "Cuckoo Electronics - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/cuckoo-electronics---costco-next.product.100142467.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/56khc3sqkjwzhg3x5xw6kc/100142467-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351547",
+      "name": "Strideline - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/strideline---costco-next.product.100351546.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/qpxrngnnrvkv5fktjqkxvpfh/100351546-847___1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351591",
+      "name": "Jacuzzi - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/jacuzzi---costco-next.product.100351590.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/6h9jx7gmqvj3rh7pq56r3g/100351590-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417958",
+      "name": "Ledge Lounger - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ledge-lounger---costco-next.product.100417957.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/p53xx45kj3fx8883rwrht7c/100417957-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417918",
+      "name": "Otterbox - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/otterbox---costco-next.product.100417917.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/hxxggx9q7cstkcvk6ss2f7s/100417917-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417920",
+      "name": "Anker SOLIX - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/anker-solix---costco-next.product.100417919.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/9rrt97rqfthbwk4x9jx2g4n/100417919-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417966",
+      "name": "SkinSquared - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/skinsquared---costco-next.product.100417965.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/vzsjwz83hb3xbcj8544htg6/100417965-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417976",
+      "name": "Kettler - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/kettler---costco-next.product.100417975.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/f8wnbkxfpz4rqc6jkf4rxbcj/100417975-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100417982",
+      "name": "Tailor Vintage - Costco Next",
+      "brand": "",
+      "originalPrice": 1.02,
+      "salePrice": 1.02,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/tailor-vintage---costco-next.product.100351443.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/wjwgfhthfxfpp5kqj6phfrmq/100351443-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351577",
+      "name": "Art Brands Studios - Thomas Kinkade - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/art-brands-studios---thomas-kinkade---costco-next.product.100351576.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/bkx7qcxvqm472pn5956sv67b/100351576-847_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351424",
+      "name": "Grohe - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/grohe---costco-next.product.100351423.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/qk87jc396p439qmkv7cwbf45/100351423-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100782634",
+      "name": "Sassy Woof - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/sassy-woof---costco-next.product.100782633.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/wjnt36m3mr2j39r4j87q7f/100782633-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100782610",
+      "name": "Nomatic Travel Accessories - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/nomatic-travel-accessories---costco-next.product.100782609.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/ck4st47h3wnt5mf3cgpqpr/100782609-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100725560",
+      "name": "Most K Beauty  - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/most-k-beauty---costco-next.product.100725559.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/wxmxshrj6np5vvq9xvgr7jrn/100725559-847_1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100782632",
+      "name": "NassifMD Skincare - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/nassifmd-skincare---costco-next.product.100782631.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/sgphx9wjbnn5wx5bkp8gmn9/100782631-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100787007",
+      "name": "Case-Mate - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/case-mate---costco-next.product.100787006.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/pcqgr55zqzcmrsvnp5crb6c/100787006-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100782638",
+      "name": "Barco Uniforms - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/barco-uniforms---costco-next.product.100782637.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/bftjbr5ghgk6gw3c8kmzgw/100782637-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100538297",
+      "name": "Round Lab - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/round-lab---costco-next.product.100538296.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/zbh7xm9nmbwjgtxr3qn537g/100538296-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100538307",
+      "name": "Anker Charging - Costco Next",
+      "brand": "",
+      "originalPrice": 1.04,
+      "salePrice": 1.04,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/anker-charging---costco-next.product.100538306.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/8z3hr433sx96brq6shkmwrj/100538306-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100538311",
+      "name": "SOMEBYMI  - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/somebymi---costco-next.product.100538310.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/t637ptjc6prkq497n7ctnrfc/100538310-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100538329",
+      "name": "Jack Georges - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/jack-georges---costco-next.product.100538328.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/pv963gfxnv6pg8ttr2z7vqr/100538328-847__1jpg?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100538309",
+      "name": "Biodance - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/biodance---costco-next.product.100538308.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/tq2s8jmcshfk2mkj595mg7rn/100538308-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100538313",
+      "name": "Viking 10-piece 3-Ply Hammered Copper Clad Cookware Set - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Kitchen",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/viking-10-piece-3-ply-hammered-copper-clad-cookware-set---costco-next.product.100538312.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/4sr45ttw2m53srkkpc7x6c8/100538312-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662666",
+      "name": "EcoFlow - Costco Next",
+      "brand": "",
+      "originalPrice": 1.02,
+      "salePrice": 1.02,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ecoflow---costco-next.product.100662665.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/mh5mspnzm6r68q6f3tkgkrz/100662665-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100724605",
+      "name": "Briggs & Riley Luggage - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/briggs-and-riley-luggage---costco-next.product.100724604.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/hnkzvc6m8m4j3zf8bfgf54sm/100724604-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662680",
+      "name": "Weatherproof Men's and Women's Outerwear - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/weatherproof-mens-and-womens-outerwear---costco-next.product.100662679.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/9wvxc7psk833pnhkw73jks9/100662680-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662690",
+      "name": "Disney Art by Thomas Kinkade - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/disney-art-by-thomas-kinkade---costco-next.product.100662689.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/q7g2qc5pxqxzkqwsp7c6c5/100662689-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662694",
+      "name": "GreenPan - Costco Next",
+      "brand": "",
+      "originalPrice": 1.05,
+      "salePrice": 1.05,
+      "priceCode": "regular",
+      "category": "Kitchen",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/greenpan---costco-next.product.100662693.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/p88f6jqh7jjw845kcfkc8kst/100662693-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100663770",
+      "name": "VOLT Lighting - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Outdoor",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/volt-lighting---costco-next.product.100663768.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/ngc43xwvm82k2vwzxgc624m/100663768-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100724573",
+      "name": "Star Wars Art by Thomas Kinkade - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/star-wars-art-by-thomas-kinkade---costco-next.product.100724572.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/cmppswcnc3pjnwjk6x2ngsqg/100724572-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100725558",
+      "name": "Carpe Diem 1 by Giant Art - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/carpe-diem-1-by-giant-art---costco-next.product.100725557.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/26cmcksx5xp9c9pgrt9vcnhx/100725557-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662672",
+      "name": "Baggallini - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/baggallini---costco-next.product.100662671.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/5fqkbz2gzb86jc848j3w33c/100662671-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662686",
+      "name": "Harry Potter Art by Thomas Kinkade - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/harry-potter-art-by-thomas-kinkade---costco-next.product.100662685.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/x9njt47gxb2rpf4hsrmph7x7/100662685-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100663769",
+      "name": "Marvel Art by Thomas Kinkade - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/marvel-art-by-thomas-kinkade---costco-next.product.100663767.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/677vvhkhxw4x5n3xpvmch3q/100663767-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100015972",
+      "name": "SkinSquared AXIS Y - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/skinsquared-axis-y---costco-next.product.100015971.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/j9nmt5gxghwsm3jsk7vv2mtk/100015971-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100016053",
+      "name": "Jack Georges Voyager Zippered Briefcase with Front Flap Pocket - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/jack-georges-voyager-zippered-briefcase-with-front-flap-pocket---costco-next.product.100016052.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/3cg3sbmp5z3v4v686f57nhv4/100016052-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100015970",
+      "name": "Skinsquared MEDIHEAL - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/skinsquared-mediheal---costco-next.product.100015969.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/f5n4c8fgt8tcmbjb3836sgjh/100015969-847__6?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100662682",
+      "name": "Bench Apparel - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Clothing",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/bench-apparel---costco-next.product.100662681.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/htxgk98v6f5n2n9v9r3x79rp/100662681-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": null
+    },
+    {
+      "id": "100351551",
+      "name": "Vinotemp - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 6,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/vinotemp---costco-next.product.100351550.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/jm6p452vrz2g68rjkt83txk3/100351550-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.17
+    },
+    {
+      "id": "100538305",
+      "name": "COSRX - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 3,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/cosrx---costco-next.product.100538304.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/f49js433rmtqr5v4bhv7nrq/100538304-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 2.67
+    },
+    {
+      "id": "100351501",
+      "name": "IQBAR - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Health",
+      "storesCount": 8,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/iqbar---costco-next.product.100351500.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/7kvqchszc8s3jnktp98tjb/100351500-847_2?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 3.75
+    },
+    {
+      "id": "100538301",
+      "name": "Wellage - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 3,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/wellage---costco-next.product.100538300.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/krvpb9kphz2m7mwrfxswncgf/100538300-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 1.67
+    },
+    {
+      "id": "100351396",
+      "name": "NordicTrack - Costco Next",
+      "brand": "",
+      "originalPrice": 1.03,
+      "salePrice": 1.03,
+      "priceCode": "regular",
+      "category": "Pet",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/nordictrack---costco-next.product.100351395.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/qw3hxkmpmzsqxkmgn65/100351395-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 5
+    },
+    {
+      "id": "1549481",
+      "name": "Ryerson 6-piece Power Reclining Leather Sectional with Power Headrests",
+      "brand": "Gilman Creek Furniture",
+      "originalPrice": 2499.99,
+      "salePrice": 2499.99,
+      "priceCode": "regular",
+      "category": "Home",
+      "storesCount": 149,
+      "states": [],
+      "markdownType": [
+        "online_deal"
+      ],
+      "url": "https://www.costco.com/ryerson-6-piece-power-reclining-leather-sectional-with-power-headrests.product.100805549.html",
+      "image": "https://bfasset.costco-static.com/U447IH35/as/5jnr8597r8ntvkr5c5pt6tjh/1549481-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350",
+      "rating": 4.58
     }
   ]
 }
