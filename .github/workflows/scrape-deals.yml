@@ -38,7 +38,8 @@ jobs:
       - name: Install dependencies
         working-directory: ./scraper
         run: |
-          pip install curl_cffi httpx beautifulsoup4 pydantic pyyaml stem
+          pip install -e . --no-deps || true
+          pip install curl_cffi httpx beautifulsoup4 pydantic pyyaml stem tldextract fake-useragent requests
 
       - name: Run DeadMan Costco Scraper
         working-directory: ./scraper
