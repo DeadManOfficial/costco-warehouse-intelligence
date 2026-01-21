@@ -1,9 +1,9 @@
 name: Scrape Costco Deals
 
 on:
-  # Run daily at 6 AM UTC (1 AM EST / 10 PM PST)
+  # Run weekly on Sundays at 6 AM UTC (to stay within free tier)
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 0'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -28,6 +28,8 @@ jobs:
 
       - name: Run Costco scraper
         working-directory: ./web
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: node scripts/scrape-costco-direct.js
 
       - name: Check for changes
@@ -51,12 +53,12 @@ jobs:
 
       - name: Summary
         run: |
-          echo "### Scrape Complete" >> $GITHUB_SUMMARY
-          echo "" >> $GITHUB_SUMMARY
+          echo "### Scrape Complete" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
           if [ "${{ steps.check.outputs.changed }}" == "true" ]; then
-            echo "✅ New deals data committed and pushed" >> $GITHUB_SUMMARY
-            echo "" >> $GITHUB_SUMMARY
-            echo "Vercel will auto-deploy the changes." >> $GITHUB_SUMMARY
+            echo "✅ New deals data committed and pushed" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "Vercel will auto-deploy the changes." >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "ℹ️ No changes to deals data" >> $GITHUB_SUMMARY
+            echo "ℹ️ No changes to deals data" >> "$GITHUB_STEP_SUMMARY"
           fi
