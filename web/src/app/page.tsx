@@ -61,8 +61,19 @@ const STATIC_DEALS: Deal[] = (staticDealsData.deals || []).map((d: Record<string
 const data = warehouseData as WarehouseData;
 const warehouses: Warehouse[] = Object.values(data.warehouses);
 
+// State counts for the landing page
+const stateCounts = warehouses.reduce((acc, w) => {
+  acc[w.state] = (acc[w.state] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
+// Top states by warehouse count
+const topStates = Object.entries(stateCounts)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 12);
+
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<"finder" | "hunter">("finder");
+  const [activeTab, setActiveTab] = useState<"landing" | "finder" | "hunter">("landing");
   const [search, setSearch] = useState("");
   const [stateFilter, setStateFilter] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
@@ -73,6 +84,12 @@ export default function Home() {
   const [showApiModal, setShowApiModal] = useState(false);
   const [dataSource, setDataSource] = useState<"static" | "live">("static");
   const [lastUpdated, setLastUpdated] = useState<string>(staticDealsData.timestamp || "");
+
+  // Navigate to finder with state selected
+  const goToState = (state: string) => {
+    setStateFilter(state);
+    setActiveTab("finder");
+  };
 
   // Load deals on mount
   useEffect(() => {
@@ -194,6 +211,16 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex gap-2 border-b border-gray-800 pb-4">
           <button
+            onClick={() => setActiveTab("landing")}
+            className={`px-6 py-3 rounded-t font-medium transition-colors ${
+              activeTab === "landing"
+                ? "bg-gray-900 text-green-500 border border-gray-700 border-b-black"
+                : "text-gray-500 hover:text-white"
+            }`}
+          >
+            HOME
+          </button>
+          <button
             onClick={() => setActiveTab("finder")}
             className={`px-6 py-3 rounded-t font-medium transition-colors ${
               activeTab === "finder"
@@ -218,9 +245,129 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 pb-8">
-        {activeTab === "finder" ? (
+        {activeTab === "landing" ? (
+          /* Landing Page */
+          <div>
+            {/* Hero Stats */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 text-center">
+                <p className="text-3xl font-bold text-green-500">{data.metadata.total_warehouses}</p>
+                <p className="text-gray-500 text-sm mt-1">Warehouses</p>
+              </div>
+              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 text-center">
+                <p className="text-3xl font-bold text-green-500">{data.metadata.states_covered}</p>
+                <p className="text-gray-500 text-sm mt-1">States</p>
+              </div>
+              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 text-center">
+                <p className="text-3xl font-bold text-green-500">{deals.length}</p>
+                <p className="text-gray-500 text-sm mt-1">Active Deals</p>
+              </div>
+              <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 text-center">
+                <p className="text-3xl font-bold text-red-500">.97</p>
+                <p className="text-gray-500 text-sm mt-1">Best Price Code</p>
+              </div>
+            </div>
+
+            {/* State Selection */}
+            <div className="mb-8">
+              <h2 className="text-xl font-bold text-green-500 mb-4">// SELECT YOUR STATE</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                {topStates.map(([state, count]) => (
+                  <button
+                    key={state}
+                    onClick={() => goToState(state)}
+                    className="bg-gray-900 border border-gray-800 hover:border-green-500 rounded-lg p-4 text-center transition-all hover:bg-gray-800 group"
+                  >
+                    <p className="text-2xl font-bold text-white group-hover:text-green-500 transition-colors">{state}</p>
+                    <p className="text-gray-500 text-sm mt-1">{count} stores</p>
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={() => setActiveTab("finder")}
+                className="mt-4 text-green-500 hover:text-green-400 text-sm"
+              >
+                View all {data.metadata.states_covered} states →
+              </button>
+            </div>
+
+            {/* All States Grid */}
+            <div className="mb-8">
+              <h2 className="text-xl font-bold text-green-500 mb-4">// ALL STATES</h2>
+              <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2">
+                {Object.entries(stateCounts)
+                  .sort((a, b) => a[0].localeCompare(b[0]))
+                  .map(([state, count]) => (
+                    <button
+                      key={state}
+                      onClick={() => goToState(state)}
+                      className="bg-gray-900/50 border border-gray-800 hover:border-green-500/50 rounded p-2 text-center transition-all hover:bg-gray-800/50 group"
+                    >
+                      <p className="text-sm font-bold text-gray-400 group-hover:text-green-500 transition-colors">{state}</p>
+                      <p className="text-gray-600 text-xs">{count}</p>
+                    </button>
+                  ))}
+              </div>
+            </div>
+
+            {/* Quick Actions */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <button
+                onClick={() => setActiveTab("finder")}
+                className="bg-gray-900 border border-gray-800 hover:border-green-500 rounded-lg p-6 text-left transition-all group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-white group-hover:text-green-500 transition-colors">Find a Warehouse</p>
+                    <p className="text-gray-500 text-sm">Search {data.metadata.total_warehouses} locations by city, ZIP, or state</p>
+                  </div>
+                </div>
+              </button>
+              <button
+                onClick={() => setActiveTab("hunter")}
+                className="bg-gray-900 border border-gray-800 hover:border-green-500 rounded-lg p-6 text-left transition-all group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-white group-hover:text-green-500 transition-colors">Hunt Markdowns</p>
+                    <p className="text-gray-500 text-sm">Find .97, .00, .88 deals and manager specials</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        ) : activeTab === "finder" ? (
           /* Warehouse Finder */
           <div>
+            {/* State Header when filtered */}
+            {stateFilter && (
+              <div className="flex items-center gap-4 mb-6">
+                <button
+                  onClick={() => setStateFilter("")}
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  ← All States
+                </button>
+                <h2 className="text-2xl font-bold">
+                  <span className="text-green-500">{stateFilter}</span>
+                  <span className="text-gray-500 text-lg ml-2">
+                    ({warehouses.filter((w) => w.state === stateFilter).length} warehouses)
+                  </span>
+                </h2>
+              </div>
+            )}
+
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <input
                 type="text"
@@ -241,10 +388,18 @@ export default function Home() {
                   </option>
                 ))}
               </select>
+              {(stateFilter || search) && (
+                <button
+                  onClick={() => { setStateFilter(""); setSearch(""); }}
+                  className="px-4 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded text-gray-400 hover:text-white transition-colors"
+                >
+                  CLEAR
+                </button>
+              )}
             </div>
 
             <p className="text-gray-500 mb-4 text-sm">
-              [ {filteredWarehouses.length} TARGETS FOUND ]
+              [ {filteredWarehouses.length} {filteredWarehouses.length === 1 ? "WAREHOUSE" : "WAREHOUSES"} FOUND ]
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -275,32 +430,21 @@ export default function Home() {
                     {warehouse.city}, {warehouse.state} {warehouse.zip}
                   </p>
 
-                  {warehouse.lat && warehouse.lon ? (
-                    <a
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${warehouse.lat},${warehouse.lon}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-green-500 hover:text-green-400"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      GET DIRECTIONS
-                    </a>
-                  ) : (
-                    <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Costco ${warehouse.address} ${warehouse.city} ${warehouse.state}`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-400"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                      SEARCH MAP
-                    </a>
-                  )}
+                  <a
+                    href={warehouse.lat && warehouse.lon
+                      ? `https://www.google.com/maps/dir/?api=1&destination=${warehouse.lat},${warehouse.lon}`
+                      : `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`Costco ${warehouse.address} ${warehouse.city} ${warehouse.state} ${warehouse.zip}`)}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-green-500 hover:text-green-400 transition-colors"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    GET DIRECTIONS
+                  </a>
                 </div>
               ))}
             </div>
