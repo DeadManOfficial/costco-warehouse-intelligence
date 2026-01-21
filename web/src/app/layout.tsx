@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Costco Warehouse Intelligence",
-  description: "FREE database of 643 US Costco locations with GPS, hours, services & markdown deals",
-  keywords: ["costco", "warehouse", "finder", "deals", "markdown", "clearance"],
+  title: "DEADMAN // Costco Intelligence",
+  description: "FREE database of 643 US Costco locations + Markdown Hunter deal scanner. Find hidden clearance deals with price code intelligence.",
+  keywords: ["costco", "warehouse", "finder", "deals", "markdown", "clearance", "price codes", ".97", "death star"],
   openGraph: {
-    title: "Costco Warehouse Intelligence",
-    description: "Find any Costco warehouse + hidden markdown deals",
+    title: "DEADMAN // Costco Intelligence",
+    description: "643 US warehouses + Markdown Hunter deal scanner",
     type: "website",
   },
 };
