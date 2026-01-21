@@ -53,7 +53,7 @@ jobs:
       - name: Run DeadMan Costco Scraper
         working-directory: ./scraper
         env:
-          PYTHONPATH: "${{ github.workspace }}/token-optimization:${{ github.workspace }}/scraper"
+          PYTHONPATH: "${{ github.workspace }}/token-optimization/src:${{ github.workspace }}/scraper"
         run: |
           python -c "
           import asyncio
