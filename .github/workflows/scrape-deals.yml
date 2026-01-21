@@ -1,11 +1,8 @@
 name: Scrape Costco Deals
 
 on:
-  # Run weekly on Sundays at 6 AM UTC (to stay within free tier)
   schedule:
-    - cron: '0 6 * * 0'
-
-  # Allow manual trigger
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
   workflow_dispatch:
 
 permissions:
@@ -16,49 +13,83 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Costco Intel
+        uses: actions/checkout@v4
+
+      - name: Checkout DeadManUltimateScraper
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: DeadManOfficial/DeadManUltimateScraper
+          path: scraper
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.11'
 
-      - name: Run Costco scraper
-        working-directory: ./web
-        env:
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-        run: node scripts/scrape-costco-direct.js
+      - name: Install TOR
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tor
+          sudo service tor start
+          sleep 10
+          curl --socks5-hostname 127.0.0.1:9050 https://check.torproject.org/api/ip || echo "TOR check failed"
+
+      - name: Install dependencies
+        working-directory: ./scraper
+        run: |
+          pip install curl_cffi httpx beautifulsoup4 pydantic pyyaml stem
+
+      - name: Run DeadMan Costco Scraper
+        working-directory: ./scraper
+        run: |
+          python -c "
+          import asyncio
+          import sys
+          sys.path.insert(0, '.')
+          from deadman_scraper.scrapers.costco_scraper import scrape_all_keywords, save_deals
+
+          async def main():
+              deals = await scrape_all_keywords(['clearance', 'deals', 'sale'], limit=100)
+              if deals:
+                  save_deals(deals)
+              else:
+                  print('No deals found')
+
+          asyncio.run(main())
+          "
+
+      - name: Copy deals to web
+        run: |
+          if [ -f scraper/web/src/data/deals.json ]; then
+            cp scraper/web/src/data/deals.json web/src/data/deals.json
+          elif [ -f web/src/data/deals.json ]; then
+            echo "Using existing deals.json"
+          fi
 
       - name: Check for changes
         id: check
-        working-directory: ./web
         run: |
-          if git diff --quiet src/data/deals.json; then
+          if git diff --quiet web/src/data/deals.json 2>/dev/null; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and push changes
+      - name: Commit and push
         if: steps.check.outputs.changed == 'true'
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           git add web/src/data/deals.json
-          git commit -m "chore: Update Costco deals data [automated]"
+          git commit -m "chore: Update deals [DeadMan Scraper]"
           git push
 
       - name: Summary
         run: |
-          echo "### Scrape Complete" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "### DeadMan Scraper Complete" >> "$GITHUB_STEP_SUMMARY"
           if [ "${{ steps.check.outputs.changed }}" == "true" ]; then
-            echo "✅ New deals data committed and pushed" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "Vercel will auto-deploy the changes." >> "$GITHUB_STEP_SUMMARY"
+            echo "✅ New deals committed" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "ℹ️ No changes to deals data" >> "$GITHUB_STEP_SUMMARY"
+            echo "ℹ️ No changes" >> "$GITHUB_STEP_SUMMARY"
           fi
