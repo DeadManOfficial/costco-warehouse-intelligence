@@ -1,7 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import warehouseData from "../costco_warehouses_master.json";
+// Static fallback deals
+import staticDealsData from "../data/deals.json";
 
 interface Warehouse {
   number: number;
@@ -42,21 +44,19 @@ const PRICE_CODES = [
 
 const CATEGORIES = ["All", "Electronics", "Home", "Kitchen", "Outdoor", "Auto", "Toys", "Clothing", "Health", "Cleaning", "Office", "Pet"];
 
-// Sample deals for demo (in production, this would come from API)
-const SAMPLE_DEALS: Deal[] = [
-  { id: "1", name: "Samsung 65\" QLED 4K Smart TV", brand: "Samsung", originalPrice: 1299.99, salePrice: 899.97, priceCode: ".97", category: "Electronics", storesCount: 142, states: ["CA", "TX", "FL", "NY", "WA"] },
-  { id: "2", name: "Dyson V15 Detect Cordless Vacuum", brand: "Dyson", originalPrice: 749.99, salePrice: 549.00, priceCode: ".00", category: "Home", storesCount: 89, states: ["CA", "WA", "OR", "AZ"] },
-  { id: "3", name: "KitchenAid Professional 5qt Mixer", brand: "KitchenAid", originalPrice: 449.99, salePrice: 299.88, priceCode: ".88", category: "Kitchen", storesCount: 203, states: ["CA", "TX", "FL", "NY", "WA", "IL", "PA"] },
-  { id: "4", name: "Traeger Pro 780 Pellet Grill", brand: "Traeger", originalPrice: 1199.99, salePrice: 799.97, priceCode: ".97", category: "Outdoor", storesCount: 67, states: ["TX", "FL", "AZ", "NV"] },
-  { id: "5", name: "Michelin Defender LTX M/S Tires (Set of 4)", brand: "Michelin", originalPrice: 899.99, salePrice: 699.00, priceCode: ".00", category: "Auto", storesCount: 312, states: ["CA", "TX", "FL", "NY", "WA", "IL", "PA", "OH"] },
-  { id: "6", name: "LEGO Star Wars Millennium Falcon", brand: "LEGO", originalPrice: 169.99, salePrice: 119.97, priceCode: ".97", category: "Toys", storesCount: 156, states: ["CA", "TX", "NY", "WA"] },
-  { id: "7", name: "Sony WH-1000XM5 Headphones", brand: "Sony", originalPrice: 399.99, salePrice: 279.97, priceCode: ".97", category: "Electronics", storesCount: 234, states: ["CA", "TX", "FL", "NY", "WA", "IL"] },
-  { id: "8", name: "Kirkland Signature Golf Balls (2 Dozen)", brand: "Kirkland", originalPrice: 34.99, salePrice: 24.97, priceCode: ".97", category: "Outdoor", storesCount: 445, states: ["CA", "TX", "FL", "NY", "WA", "AZ", "CO"] },
-  { id: "9", name: "Instant Pot Pro Plus 6qt", brand: "Instant Pot", originalPrice: 169.99, salePrice: 99.88, priceCode: ".88", category: "Kitchen", storesCount: 178, states: ["CA", "TX", "FL", "WA"] },
-  { id: "10", name: "Vitamix A3500 Blender", brand: "Vitamix", originalPrice: 649.99, salePrice: 449.00, priceCode: ".00", category: "Kitchen", storesCount: 92, states: ["CA", "WA", "OR"] },
-  { id: "11", name: "Apple iPad 10th Gen 64GB", brand: "Apple", originalPrice: 449.99, salePrice: 349.97, priceCode: ".97", category: "Electronics", storesCount: 312, states: ["CA", "TX", "FL", "NY", "WA", "IL", "PA"] },
-  { id: "12", name: "Tempur-Pedic Queen Mattress", brand: "Tempur-Pedic", originalPrice: 2499.99, salePrice: 1799.00, priceCode: ".00", category: "Home", storesCount: 45, states: ["CA", "TX", "FL"] },
-];
+// Transform static deals to match interface
+const STATIC_DEALS: Deal[] = (staticDealsData.deals || []).map((d: Record<string, unknown>) => ({
+  id: String(d.id || ""),
+  name: String(d.name || ""),
+  brand: String(d.brand || ""),
+  originalPrice: Number(d.originalPrice) || 0,
+  salePrice: Number(d.salePrice) || 0,
+  priceCode: (d.priceCode as Deal["priceCode"]) || "regular",
+  category: String(d.category || "Other"),
+  storesCount: Number(d.storesCount) || 0,
+  states: Array.isArray(d.states) ? d.states.map(String) : [],
+  url: String(d.url || ""),
+}));
 
 const data = warehouseData as WarehouseData;
 const warehouses: Warehouse[] = Object.values(data.warehouses);
@@ -69,8 +69,36 @@ export default function Home() {
   const [showPriceCodes, setShowPriceCodes] = useState(false);
   const [apiKey, setApiKey] = useState("");
   const [scanning, setScanning] = useState(false);
-  const [scanResults, setScanResults] = useState<Deal[]>([]);
+  const [deals, setDeals] = useState<Deal[]>(STATIC_DEALS);
   const [showApiModal, setShowApiModal] = useState(false);
+  const [dataSource, setDataSource] = useState<"static" | "live">("static");
+  const [lastUpdated, setLastUpdated] = useState<string>(staticDealsData.timestamp || "");
+
+  // Load deals on mount
+  useEffect(() => {
+    loadDeals();
+  }, []);
+
+  const loadDeals = async () => {
+    setScanning(true);
+    try {
+      const res = await fetch(`/api/deals?limit=50&category=${categoryFilter}&state=${stateFilter}`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.deals && data.deals.length > 0) {
+          setDeals(data.deals);
+          setDataSource("live");
+          setLastUpdated(data.timestamp);
+        }
+      }
+    } catch {
+      // Fall back to static data
+      setDeals(STATIC_DEALS);
+      setDataSource("static");
+    } finally {
+      setScanning(false);
+    }
+  };
 
   const states = useMemo(() => {
     const unique = [...new Set(warehouses.map((w) => w.state))].sort();
@@ -93,7 +121,6 @@ export default function Home() {
   }, [search, stateFilter]);
 
   const filteredDeals = useMemo(() => {
-    const deals = scanResults.length > 0 ? scanResults : SAMPLE_DEALS;
     return deals.filter((d) => {
       const matchesCategory = categoryFilter === "All" || d.category === categoryFilter;
       const matchesState = !stateFilter || d.states.includes(stateFilter);
@@ -104,14 +131,26 @@ export default function Home() {
       const discountB = ((b.originalPrice - b.salePrice) / b.originalPrice) * 100;
       return discountB - discountA;
     });
-  }, [scanResults, categoryFilter, stateFilter]);
+  }, [deals, categoryFilter, stateFilter]);
 
   const runScan = async () => {
     setScanning(true);
-    // Simulate API call delay
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    setScanResults(SAMPLE_DEALS);
-    setScanning(false);
+    try {
+      const res = await fetch(`/api/deals?limit=50&category=${categoryFilter}&state=${stateFilter}`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.deals && data.deals.length > 0) {
+          setDeals(data.deals);
+          setDataSource("live");
+          setLastUpdated(data.timestamp);
+        }
+      }
+    } catch {
+      setDeals(STATIC_DEALS);
+      setDataSource("static");
+    } finally {
+      setScanning(false);
+    }
   };
 
   const getPriceCodeStyle = (code: Deal["priceCode"]) => {

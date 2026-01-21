@@ -1,0 +1,563 @@
+{
+  "timestamp": "2026-01-21T22:03:40.826Z",
+  "source": "Warehouse Runner",
+  "count": 37,
+  "deals": [
+    {
+      "id": "28028",
+      "name": "28\" Mixed Greens Wreath",
+      "brand": "28\"",
+      "originalPrice": 19.99,
+      "salePrice": 4.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 72,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/28028"
+    },
+    {
+      "id": "1320970",
+      "name": "Sukhi's Organic Lemon Rice 2/24 oz",
+      "brand": "Sukhi's",
+      "originalPrice": 14.99,
+      "salePrice": 3.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 2,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1320970"
+    },
+    {
+      "id": "112266",
+      "name": "Madi Gran Panettone 2.2 lbs",
+      "brand": "Madi",
+      "originalPrice": 10.99,
+      "salePrice": 2.97,
+      "priceCode": ".97",
+      "category": "Kitchen",
+      "storesCount": 65,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/112266"
+    },
+    {
+      "id": "88566",
+      "name": "Ore-Ida Tater Tots 8 Pound Bag",
+      "brand": "Ore-Ida",
+      "originalPrice": 11.59,
+      "salePrice": 4.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 16,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/88566"
+    },
+    {
+      "id": "1554558",
+      "name": "Chobani Plain Greek Yogurt 2.5 lbs",
+      "brand": "Chobani",
+      "originalPrice": 5.99,
+      "salePrice": 2.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 4,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1554558"
+    },
+    {
+      "id": "2598",
+      "name": "Reflections Silver Plastic Cutlery 160 Count",
+      "brand": "Reflections",
+      "originalPrice": 9.99,
+      "salePrice": 4.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 14,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/2598"
+    },
+    {
+      "id": "112218",
+      "name": "Häagen-Dazs Vanilla & Almond Bars 15/3 fl oz (1.40 Qts)",
+      "brand": "Häagen-Dazs",
+      "originalPrice": 13.99,
+      "salePrice": 6.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 3,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/112218"
+    },
+    {
+      "id": "1322682",
+      "name": "Gerry Youth Snow Pant",
+      "brand": "Gerry",
+      "originalPrice": 9.97,
+      "salePrice": 4.97,
+      "priceCode": ".97",
+      "category": "Kitchen",
+      "storesCount": 113,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1322682"
+    },
+    {
+      "id": "1557516",
+      "name": "Banana Republic Men's Performance Pant",
+      "brand": "Banana Republic",
+      "originalPrice": 4.97,
+      "salePrice": 2.5,
+      "priceCode": "regular",
+      "category": "Kitchen",
+      "storesCount": 179,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1557516"
+    },
+    {
+      "id": "1363786",
+      "name": "Dittmann Stuffed Peperoncini Duo 20.46 Ounce Jar",
+      "brand": "Dittmann",
+      "originalPrice": 9.49,
+      "salePrice": 4.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1363786"
+    },
+    {
+      "id": "866923",
+      "name": "MARLBORO RED 72 BOX",
+      "brand": "MARLBORO",
+      "originalPrice": 156.35,
+      "salePrice": 82.69,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 0,
+      "states": [],
+      "markdownType": [
+        "manager_special"
+      ],
+      "url": "https://app.warehouserunner.com/costco/866923"
+    },
+    {
+      "id": "711585",
+      "name": "Samuel Adams Octoberfest 28/12 Ounce Bottles",
+      "brand": "Samuel Adams",
+      "originalPrice": 37.39,
+      "salePrice": 19.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 2,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/711585"
+    },
+    {
+      "id": "1339884",
+      "name": "Stonyfield Organic Smoothies with Probiotics 12/6 fl oz (2.25 QTS)",
+      "brand": "Stonyfield Organic",
+      "originalPrice": 10.99,
+      "salePrice": 5.97,
+      "priceCode": ".97",
+      "category": "Health",
+      "storesCount": 11,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1339884"
+    },
+    {
+      "id": "54846",
+      "name": "La Crema Pinot Noir Sonoma Coast 750 ML",
+      "brand": "La Crema",
+      "originalPrice": 21.99,
+      "salePrice": 11.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 4,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/54846"
+    },
+    {
+      "id": "914351",
+      "name": "Starbucks Iced Coffee 2/48 Ounce Bottles",
+      "brand": "Starbucks",
+      "originalPrice": 9.99,
+      "salePrice": 5.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 6,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/914351"
+    },
+    {
+      "id": "1259871",
+      "name": "Delici Belgian Chocolate Mousse 6 Pack, 2.67 oz Cups",
+      "brand": "Delici",
+      "originalPrice": 12.49,
+      "salePrice": 7.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 8,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1259871"
+    },
+    {
+      "id": "1312509",
+      "name": "MUSH Overnight Oats Variety Pack, 8 Cups, 5 oz Each (2.5 lbs Total)",
+      "brand": "MUSH",
+      "originalPrice": 9.99,
+      "salePrice": 6.49,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 8,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1312509"
+    },
+    {
+      "id": "1891",
+      "name": "CHINET EXTRA LARGE PLATTER 100 CT",
+      "brand": "CHINET",
+      "originalPrice": 18.99,
+      "salePrice": 14.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "instant_savings",
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1891"
+    },
+    {
+      "id": "1338936",
+      "name": "Upper Crust Bakery Mini Lemon Bites 30 Ounce Container",
+      "brand": "Upper Crust Bakery",
+      "originalPrice": 8.59,
+      "salePrice": 7.49,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 2,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1338936"
+    },
+    {
+      "id": "1308641",
+      "name": "STERNO CHROME WIRE CHAFING STAND 3 PACK",
+      "brand": "STERNO",
+      "originalPrice": 12.49,
+      "salePrice": 10.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1308641"
+    },
+    {
+      "id": "27398",
+      "name": "Grey Poupon Dijon Mustard 2 Pack 16 Ounces Each",
+      "brand": "Grey Poupon",
+      "originalPrice": 8.49,
+      "salePrice": 7.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/27398"
+    },
+    {
+      "id": "1966914",
+      "name": "Dawn Foods White Cake Base 25 lb Bag",
+      "brand": "Dawn Foods",
+      "originalPrice": 9.97,
+      "salePrice": 9.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 13,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1966914"
+    },
+    {
+      "id": "1555",
+      "name": "PHILIPPINE DRIED MANGOES 30 OUNCES",
+      "brand": "PHILIPPINE",
+      "originalPrice": 12.89,
+      "salePrice": 12.89,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 15,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1555"
+    },
+    {
+      "id": "1504992",
+      "name": "Foster Grant Design Optics 3 Pack Reading Glasses",
+      "brand": "Foster Grant",
+      "originalPrice": 9.97,
+      "salePrice": 9.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 27,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1504992"
+    },
+    {
+      "id": "1591226",
+      "name": "GALILEAN'S KITCHEN BACON WRAPPED SCALLOPS 13 OZ",
+      "brand": "GALILEAN'S",
+      "originalPrice": 9.97,
+      "salePrice": 9.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 28,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1591226"
+    },
+    {
+      "id": "1622",
+      "name": "JAPANESE MAPLE UPRIGHT ASSORTED VARIETIES 6.04G",
+      "brand": "JAPANESE",
+      "originalPrice": 26.97,
+      "salePrice": 26.97,
+      "priceCode": ".97",
+      "category": "Kitchen",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1622"
+    },
+    {
+      "id": "1581548",
+      "name": "14KT YELLOW GOLD VS2 I 2.35CTW ROUND DIAMOND 18\" INCH NECKLACE",
+      "brand": "14KT",
+      "originalPrice": 2499.97,
+      "salePrice": 2499.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1581548"
+    },
+    {
+      "id": "1334201",
+      "name": "5-PACK DRAKE RESIN PLANTERS",
+      "brand": "5-PACK",
+      "originalPrice": 14.97,
+      "salePrice": 14.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1334201"
+    },
+    {
+      "id": "1574930",
+      "name": "14kt White Gold VS2 I 0.05ctw Diamond and Swiss Blue Topaz Ring",
+      "brand": "14kt",
+      "originalPrice": 399.97,
+      "salePrice": 399.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 4,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1574930"
+    },
+    {
+      "id": "1265",
+      "name": "HYDRANGEA 2.7G/10.3L",
+      "brand": "HYDRANGEA",
+      "originalPrice": 29.99,
+      "salePrice": 29.99,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1265"
+    },
+    {
+      "id": "1586087",
+      "name": "MONDETTA LADIES LIGHTWEIGHT PRINTED TOP",
+      "brand": "MONDETTA",
+      "originalPrice": 2.97,
+      "salePrice": 2.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 6,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1586087"
+    },
+    {
+      "id": "1299220",
+      "name": "PURELUX SIMPLY COOL MEMORY FOAM PILLOW - QUEEN",
+      "brand": "PURELUX",
+      "originalPrice": 19.97,
+      "salePrice": 19.97,
+      "priceCode": ".97",
+      "category": "Home",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1299220"
+    },
+    {
+      "id": "1624332",
+      "name": "Samurai Tactical Fish Kojiro Tackle Backpack",
+      "brand": "Samurai Tactical",
+      "originalPrice": 29.97,
+      "salePrice": 29.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 2,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1624332"
+    },
+    {
+      "id": "1336",
+      "name": "TROPICAL FOLIAGE IN CERAMIC 36OZ/265ML",
+      "brand": "TROPICAL",
+      "originalPrice": 11.97,
+      "salePrice": 11.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1336"
+    },
+    {
+      "id": "1624844",
+      "name": "HURLEY WOMEN'S PUFF CLOG",
+      "brand": "HURLEY",
+      "originalPrice": 4.97,
+      "salePrice": 4.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 6,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1624844"
+    },
+    {
+      "id": "1328036",
+      "name": "32 DEGREES + MEN'S BOXER BRIEF 3 PK",
+      "brand": "32",
+      "originalPrice": 6.97,
+      "salePrice": 6.97,
+      "priceCode": ".97",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1328036"
+    },
+    {
+      "id": "1412811",
+      "name": "KOSHER FOR PASSOVER RAINBOW COOKIES 18 OZ (1.12 LBS)",
+      "brand": "KOSHER",
+      "originalPrice": 8.79,
+      "salePrice": 8.79,
+      "priceCode": "regular",
+      "category": "Other",
+      "storesCount": 1,
+      "states": [],
+      "markdownType": [
+        "regional_discount"
+      ],
+      "url": "https://app.warehouserunner.com/costco/1412811"
+    }
+  ]
+}
