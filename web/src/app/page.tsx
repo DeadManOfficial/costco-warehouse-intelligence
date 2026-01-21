@@ -140,7 +140,8 @@ export default function Home() {
   const filteredDeals = useMemo(() => {
     return deals.filter((d) => {
       const matchesCategory = categoryFilter === "All" || d.category === categoryFilter;
-      const matchesState = !stateFilter || d.states.includes(stateFilter);
+      // Empty states = available everywhere, so don't filter those out
+      const matchesState = !stateFilter || d.states.length === 0 || d.states.includes(stateFilter);
       return matchesCategory && matchesState;
     }).sort((a, b) => {
       // Sort by discount percentage

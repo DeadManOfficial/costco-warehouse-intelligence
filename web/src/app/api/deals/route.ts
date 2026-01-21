@@ -169,7 +169,8 @@ export async function GET(request: Request) {
         if (result) {
           // Apply filters
           if (category && category !== "All" && result.category !== category) continue;
-          if (state && !result.states.includes(state)) continue;
+          // Only filter by state if the deal has state data - empty states means available everywhere
+          if (state && result.states.length > 0 && !result.states.includes(state)) continue;
           deals.push(result);
         }
         if (deals.length >= limit) break;
