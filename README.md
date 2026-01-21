@@ -4,9 +4,9 @@
 
 # Costco Warehouse Intelligence
 
-**FREE Database — 643 US Costco Locations**
+**FREE Database + Markdown Hunter App**
 
-Complete coordinates, hours, services & gas prices. No paid APIs.
+643 US warehouses with GPS, hours, services & a desktop app to find hidden deals.
 
 <br>
 
@@ -26,11 +26,18 @@ Complete coordinates, hours, services & gas prices. No paid APIs.
 
 ---
 
-## Quick Start
+## Two Tools, One Repo
+
+| Tool | Description |
+|------|-------------|
+| **Database + Geocoder** | 643 warehouses, GPS coords, instant lookups |
+| **Markdown Hunter App** | Desktop app to find hidden deals |
+
+---
+
+## 1. Database & Geocoder
 
 ```bash
-git clone https://github.com/DeadManOfficial/costco-warehouse-intelligence.git
-cd costco-warehouse-intelligence
 pip install -r requirements.txt
 ```
 
@@ -49,28 +56,39 @@ ca_warehouses = geocoder.by_state('CA')
 nearby = geocoder.find_nearest(lat=37.7749, lon=-122.4194, limit=5)
 ```
 
----
-
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| **643 Warehouses** | Full US coverage, GPS coordinates |
-| **Instant Lookups** | <0.01ms offline queries |
-| **State Search** | Filter by state, <1ms |
-| **Nearest Neighbor** | Distance-based search |
-| **Markdown Scraper** | Current deals & discounts |
-
----
-
-## Performance
+### Performance
 
 | Operation | Speed |
 |-----------|-------|
 | Single lookup | <0.01ms |
 | State search | <1ms |
 | Nearest (k=5) | <5ms |
-| Full scan | <50ms |
+
+---
+
+## 2. Markdown Hunter App
+
+```bash
+cd app
+pip install -r requirements.txt
+python app.py
+```
+
+### Price Codes
+
+| Ending | Meaning |
+|--------|---------|
+| **.97** | Corporate clearance - HIGH VALUE |
+| **.00** | Manager special - NEGOTIABLE |
+| **.88** | Manager markdown |
+| **\*** | Death star - NO RESTOCK |
+
+### Setup
+
+1. Get free Groq API key from [console.groq.com](https://console.groq.com)
+2. Click **SETTINGS** in app
+3. Enter API key, select state & warehouse
+4. Click **LOAD DEALS**
 
 ---
 
@@ -85,11 +103,26 @@ Commercial Costco APIs cost $80+/month. This is free forever.
 
 ---
 
+## Project Structure
+
+```
+costco-warehouse-intelligence/
+├── src/                    # Geocoder library
+├── data/                   # Warehouse database
+├── app/                    # Markdown Hunter desktop app
+│   ├── app.py              # Main GUI
+│   ├── costco_geocoder_v2.py
+│   └── warehouse_runner_*.py
+└── docs/                   # Documentation
+```
+
+---
+
 ## Related
 
-- **[mcp-auditor](https://github.com/DeadManOfficial/mcp-auditor)** — Security & compliance auditor for Claude
+- **[mcp-auditor](https://github.com/DeadManOfficial/mcp-auditor)** — Security auditor for Claude
 - **[token-optimization](https://github.com/DeadManOfficial/token-optimization)** — Save 30-50% on API costs
-- **[AI-Updates](https://github.com/DeadManOfficial/AI-Updates)** — Daily AI intelligence briefs
+- **[AI-Updates](https://github.com/DeadManOfficial/AI-Updates)** — Daily AI intelligence
 
 ---
 

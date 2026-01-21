@@ -1,0 +1,10 @@
+# Costco Markdown Hunter - Requirements
+# Install: pip install -r requirements.txt
+
+customtkinter>=5.2.0
+requests>=2.31.0
+cloudscraper>=1.2.71
+Pillow>=10.0.0
+
+# Build tools (optional - for creating .exe)
+# pyinstaller>=6.0.0

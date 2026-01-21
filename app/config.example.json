@@ -1,0 +1,8 @@
+{
+  "groq_api_key": "YOUR_GROQ_API_KEY_HERE",
+  "warehouses": ["1", "2", "3"],
+  "save_directory": "C:/Users/YourName/Documents/CostcoHunter",
+  "category": "All",
+  "ai_enabled": true,
+  "setup_complete": true
+}
