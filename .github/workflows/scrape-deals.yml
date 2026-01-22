@@ -50,6 +50,48 @@ jobs:
           cd scraper && pip install -e . --no-deps || true && cd ..
           pip install curl_cffi "httpx[socks]" beautifulsoup4 pydantic pyyaml stem tldextract fake-useragent requests aiohttp lxml PySocks
 
+      - name: Test Scraper Infrastructure
+        working-directory: ./scraper
+        env:
+          PYTHONPATH: "${{ github.workspace }}/token-optimization/src:${{ github.workspace }}/scraper"
+        run: |
+          python -c "
+          import asyncio
+          from deadman_scraper.core.config import Config
+          from deadman_scraper.fetch.tor_manager import TORManager
+
+          async def test():
+              config = Config.from_env()
+              tor = TORManager(config.tor)
+
+              if await tor.start():
+                  print(f'✅ TOR connected: {tor.proxy_url}')
+
+                  from curl_cffi.requests import AsyncSession
+                  async with AsyncSession(impersonate='chrome120', proxy=tor.proxy_url) as session:
+                      # Test 1: httpbin (shows our TOR IP)
+                      resp = await session.get('https://httpbin.org/ip', timeout=30)
+                      print(f'✅ httpbin response: {resp.text.strip()}')
+
+                      # Test 2: HackerNews API (public data)
+                      resp2 = await session.get('https://hacker-news.firebaseio.com/v0/topstories.json', timeout=30)
+                      stories = resp2.json()[:5]
+                      print(f'✅ HackerNews top 5 story IDs: {stories}')
+
+                      # Test 3: Reddit JSON (public)
+                      resp3 = await session.get('https://www.reddit.com/r/deals/hot.json?limit=3', timeout=30)
+                      if resp3.status_code == 200:
+                          data = resp3.json()
+                          posts = [p['data']['title'][:50] for p in data['data']['children'][:3]]
+                          print(f'✅ Reddit r/deals posts: {posts}')
+                      else:
+                          print(f'⚠️ Reddit: {resp3.status_code}')
+              else:
+                  print('❌ TOR not available')
+
+          asyncio.run(test())
+          "
+
       - name: Run DeadMan Costco Scraper
         working-directory: ./scraper
         env:
